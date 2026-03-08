@@ -53,8 +53,8 @@ export default function LoginPage() {
 
           <div className="text-center">
             <span className="text-sm text-gray-600">
-              ليس لديك حساب؟{' '}
-              <a href="/auth/register" className="font-medium text-indigo-600 hover:text-indigo-500">
+              لوحة التحكم؟{' '}
+              <<a href="/dashboard"> className="font-medium text-indigo-600 hover:text-indigo-500">
                 قم بإنشاء واحد
               </a>
             </span>
