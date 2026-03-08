@@ -53,14 +53,11 @@ export default function LoginPage() {
 
           <div className="text-center">
             <span className="text-sm text-gray-600">
-              لوحة التحكم؟{' '}
-              <<a href="/dashboard"> className="font-medium text-indigo-600 hover:text-indigo-500">
-                قم بإنشاء واحد
+              لا تملك حساباً؟{' '}
+              <a href="/dashboard" className="font-medium text-indigo-600 hover:text-indigo-500">
+                اذهب إلى لوحة التحكم (تجربة)
               </a>
             </span>
           </div>
-        </form>
-      </div>
-    </div>
   );
 }
