@@ -10,7 +10,7 @@ export default function LoginPage() {
             أهلاً بعودتك إلى N3MGrapher.
           </p>
         </div>
-        <form className="mt-8 space-y-6">
+        <form className="mt-8 space-y-6" onSubmit={(e) => e.preventDefault()}>
           <div className="space-y-4 rounded-md shadow-sm">
             <div>
               <label htmlFor="email" className="block text-sm font-medium text-gray-700">
@@ -53,11 +53,25 @@ export default function LoginPage() {
 
           <div className="text-center">
             <span className="text-sm text-gray-600">
-              لا تملك حساباً؟{' '}
-              <a href="/dashboard" className="font-medium text-indigo-600 hover:text-indigo-500">
-                اذهب إلى لوحة التحكم (تجربة)
+              ليس لديك حساب؟{' '}
+              <a href="/auth/register" className="font-medium text-indigo-600 hover:text-indigo-500">
+                قم بإنشاء حساب جديد
               </a>
             </span>
           </div>
+        </form>
+
+        {/* رابط مؤقت للوصول إلى لوحة التحكم */}
+        <div className="border-t border-gray-200 pt-6">
+            <p className="text-center text-sm text-gray-500">
+                للتجربة: اذهب إلى 
+                <a href="/dashboard" className="ml-1 font-medium text-indigo-600 hover:text-indigo-500">
+                    لوحة التحكم
+                </a>
+            </p>
+        </div>
+
+      </div>
+    </div>
   );
 }
